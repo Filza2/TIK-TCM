@@ -1,5 +1,5 @@
 try:
-    from TikTokLive import TikTokLiveClient;from colorama import Fore;from TikTokLive.types.events import *;from TikTokLive.types.errors import *;from datetime import datetime;d=datetime.now();d1=str(d).split(" ")[0];d2=str(d).split(" ")[1]
+    from TikTokLive import TikTokLiveClient;from TikTokLive.types.events import *;from TikTokLive.types.errors import *;from datetime import datetime;from colorama import Fore;d=datetime.now();d1=str(d).split(" ")[0];d2=str(d).split(" ")[1]
 except Exception as e:print(f'[!] Download The Missing Module ! , {e}');exit()
 
 print(f"""
@@ -27,7 +27,7 @@ def dis_connect(event: LiveEndEvent):
 #@client.on("join")
 #def join(event: JoinEvent):
 #    print(f"{Fore.WHITE}[{Fore.LIGHTRED_EX}+{Fore.WHITE}] {event.user.uniqueId}  <-- user | Name -->  {event.user.nickname}  Joined The Stream !")
-#    with open(f'Join_{d1}.txt', 'a') as x:
+#    with open(f'{user}_Join_{d1}.txt', 'a') as x:
 #        x.write(str(event.user.uniqueId)+'\n')
 @client.on("like")
 def like(event: LikeEvent):
