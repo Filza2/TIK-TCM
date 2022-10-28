@@ -1,5 +1,5 @@
 try:
-    from TikTokLive import TikTokLiveClient;from TikTokLive.types.events import *;from TikTokLive.types.errors import *;from datetime import datetime;d=datetime.now();d1=str(d).split(" ")[0];d2=str(d).split(" ")[1]
+    from TikTokLive import TikTokLiveClient;from colorama import Fore;from TikTokLive.types.events import *;from TikTokLive.types.errors import *;from datetime import datetime;d=datetime.now();d1=str(d).split(" ")[0];d2=str(d).split(" ")[1]
 except Exception as e:print(f'[!] Download The Missing Module ! , {e}');exit()
 
 print(f"""
